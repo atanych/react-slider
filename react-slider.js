@@ -264,7 +264,7 @@
 
     componentDidMount: function () {
       window.addEventListener('resize', this._handleResize);
-      this._resize();
+      window.setTimeout(() => { this._resize() }, 0);
     },
 
     componentWillUnmount: function () {
